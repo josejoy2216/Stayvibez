@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sandy {
+    background: sandybrown;
+}
+
+.hover:hover {
+    background-color: sandybrown;
+    color: white;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.hover-2:hover {
+    background-color: white;
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.mr {
+    margin-right: 1rem;
+}
+
+.ml {
+    margin-left: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    align-content: center;
+    margin: 0 auto;
+    grid-gap: 1rem;
+}
+
+.flexy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    display: block;
+}
+
+.grid label {
+    display: block;
+}
+
+.input {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 45px;
+    border: 1px solid #aeaeae;
+    padding: 0 20px;
+}
+
+.booking h2 {
+    margin: 3rem auto;
+}
+
+.button {
+    padding: 10px 40px;
+    background-color: sandybrown;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    margin: 2rem auto;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-section {
+    margin-top: -5rem;
+}
+
+.reg-form {
+    margin-top: -7rem;
+}
+
+.reg-form input {
+    max-height: 50px;
+}
+
+.room-menu {
+    display: flex;
+    align-items: center;
+}
+.logo a h4 {
+    font-size: 26px;
+}
+
+.about, .about-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.about-details span{
+    color: goldenrod;
+}
+.about-details h3 {
+    margin: 1rem auto;
+}
+.about-page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 1rem;
+}
+.image-div {
+    width: 90%;
+}
+.image-div img {
+    width: 100%;
+}
+
+.about-page .about-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.list form input[type="number"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+.list form textarea {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.terms {
+    margin: 2rem auto;
+}
+.list form .select-tags div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list form .select-tags {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+}
+
+.co-text a {
+    color: #1e2331
+}
+.logo-admin {
+    color: black;
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+.img-thumbnail{
+  width:100%;
+  height:200px;
+  object-fit: cover;
+  object-position: center;
+  margin:10px;
+}
+
+#progress {
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.progress-color {
+    background-color: lightgray;
+    width: 0%;
+    height: 30px;
+    transition: .4s ease-out;
+    text-align: center;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+@media(max-width: 480px) {
+  .img-thumbnail{
+    height: 200px;
+  }
+}
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        padding: 1rem 0;
+    }
+    .list form .select-tags {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reg-form {
+        margin-top: 0rem;
+    }
+    .about-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .list form .select-tags {
+        grid-template-columns: 1fr;
+    }
+}
